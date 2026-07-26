@@ -1,0 +1,49 @@
+# PURSUE visual-evidence — SHA-256 MANIFEST
+# =========================================
+# 14 image files + the official machine-readable catalogue, each preceded by
+# its war.gov origin URL. Paths are relative to this pack's root.
+#
+# VERIFY (two equivalent ways, run from the pack root):
+#   ./reproduce.sh                                        # full re-download + verify + re-derive
+#   grep -vE '^#|^$' manifest.sha256 | shasum -a 256 -c -  # hash-check the bundled copies only
+#
+# Provenance note: these SHA-256 values were confirmed bit-for-bit identical to
+# files served live from war.gov (three re-downloaded independently; a second
+# operator reproduced the CSV modulo a byte-order mark). See README.md §Provenance.
+
+# --- 14 forensic image files (origin: war.gov PURSUE catalogue, releases of 8 May / 12 Jun 2026) ---
+
+# https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm1-apollo-12-1969.jpg
+7f1c6a3220d6c59013fbc04f0011867ee5caf77f439fb6ecc6f7e80b0232ea55  files/NASA-UAP-VM001.jpg
+# https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm2-apollo-12-1969.jpg
+acaa311b10923b3a575041b3d62ea6e698d7694fdd6b91ceb4689984f7354c48  files/NASA-UAP-VM002.jpg
+# https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm3-apollo-12-1969.jpg
+cc3ac0d6800848612758fe0c36d84d96836f6ea0c9f028d453a5f985e4f8dc34  files/NASA-UAP-VM003.jpg
+# https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm4-apollo-12-1969.jpg
+92ae47295e427519e9189d241db01823223b6c232125ea8015a603100f80b6c2  files/NASA-UAP-VM004.jpg
+# https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm5-apollo-12-1969.jpg
+472793feaf12754d25ed699a667fdd5cee91d61dda66b8027ff7fbdc48d00ccd  files/NASA-UAP-VM005.jpg
+# https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm6-apollo-17-1972.jpg
+ce62e46b3535a4683ef6fd192d858be52dbbd9ca011ae1a9cb43dba947815f54  files/NASA-UAP-VM006.jpg
+# https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D016_Digital-Rendering_Incident-2-1_Western-US-Event_2023.jpg
+b1e7c92ade168f3fee8e9a29bd44a4adb9101f00660510ca97b03e2c89d17b79  files/FBI-UAP-D016.jpg
+# https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D017_Digital-Rendering_Incident-2-2_Western-US-Event_2023.jpg
+915709912f3612b41870ff6513dd3820d1f6f7b02cf09481f4128cd15b62b6f3  files/FBI-UAP-D017.jpg
+# https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D018_Digital-Rendering_Incident-2-3_Western-US-Event_2023.jpg
+8bd2f3385d375a75b20abd211bc3e2f232d5fe7c418b3cad457ec571cd1ec10b  files/FBI-UAP-D018.jpg
+# https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D019_Digital-Rendering_Incident-2-4_Western-US-Event_2023.jpg
+623e02b31165d3a59f50ac19169d381750f00f79fedb3a3f762f5e1fc23e4c3d  files/FBI-UAP-D019.jpg
+# https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D020_Digital-Rendering_Incident-2-5_Western-US-Event_2023.jpg
+124dc78af9a98b747074f7abcc01bdf6ebd0bf65afbe43a1b4ffa4a9dd175932  files/FBI-UAP-D020.jpg
+# https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D021_Digital-Rendering_Incident-1-3_Western-US-Event_2023.jpg
+d767f2f41f24abef90d3f10f858acb879b8c2d295afd9e7b31b6d5b8e42ba32d  files/FBI-UAP-D021.jpg
+# https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D022_Digital-Rendering_Incident-2-6_Western-US-Event_2023.jpg
+8bb0b7c69f8b7c2aa154c455b5918b871cf42bc96559fadda1433ba4d0d727bd  files/FBI-UAP-D022.jpg
+# https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D023_Digital-Rendering_Incident-2-7_Western-US-Event_2023.jpg
+b18ca8af0477d1c5c551abead71a795b15eb3f71f62b531bee869a00551e78dd  files/FBI-UAP-D023.jpg
+
+# --- official machine-readable catalogue (1,555 physical lines / 334 catalogue items) ---
+# NOTE: a live re-download may differ from this hash ONLY by a UTF-8 BOM and/or CRLF line
+# endings; reproduce.sh also reports a normalized (BOM-stripped, LF) comparison for this file.
+# https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv
+aa7ff6af6b2ceb338d792a1b08e420ecee147ea4391568c73be0332465d4b0e5  uap-data.csv
